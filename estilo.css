@@ -31,4 +31,13 @@ footer {
    p {
     text-align: center;
    }
+
+   img {
+    width: 100%;
+    text-align: center;
+    padding: 2em 0 2em 0;
+   }
+   
+
+   
 }

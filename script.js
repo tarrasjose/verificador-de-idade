@@ -61,7 +61,7 @@ function verificar() {
 
         if (genero == 'homem') {
             
-            if (idade > 1) {
+            if (idade >= 18) {
                 res.innerHTML = `Indetificamos um ${genero} com ${idade} anos`
                 res.appendChild(img)
             } else {
@@ -71,7 +71,7 @@ function verificar() {
             }
             
         } else {
-            if (idade > 1) {
+            if (idade >= 18) {
                 res.innerHTML = `Identificamos uma ${genero} com ${idade} anos`
                 res.appendChild(img) 
             } else {

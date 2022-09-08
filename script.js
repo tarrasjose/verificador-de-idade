@@ -65,9 +65,21 @@ function verificar() {
                 res.innerHTML = `Indetificamos um ${genero} com ${idade} anos`
                 res.appendChild(img)
             } else {
-                genero = 'menino'
-                res.innerHTML = `Indetificamos um ${genero} com ${idade} ano`
-                res.appendChild(img)
+                if(idade < 1) {
+                    genero = 'menino'
+                    res.innerHTML = `Indetificamos um ${genero} com meses de idade`
+                    res.appendChild(img)
+                } else if(idade < 2) {
+                    genero = 'menino'
+                    res.innerHTML = `Indetificamos um ${genero} com ${idade} ano`
+                    res.appendChild(img)
+                } else {
+                    genero = 'menino'
+                    res.innerHTML = `Indetificamos um ${genero} com ${idade} anos`
+                    res.appendChild(img)
+                }
+
+                
             }
             
         } else {
@@ -75,9 +87,20 @@ function verificar() {
                 res.innerHTML = `Identificamos uma ${genero} com ${idade} anos`
                 res.appendChild(img) 
             } else {
-                genero = 'menina'
-                res.innerHTML = `Identificamos uma ${genero} com ${idade} ano`
-                res.appendChild(img) 
+                if (idade < 1) {
+                    genero = 'menina'
+                    res.innerHTML = `Identificamos uma ${genero} com meses de idade`
+                    res.appendChild(img) 
+                } else if (idade < 2) {
+                    genero = 'menina'
+                    res.innerHTML = `Identificamos uma ${genero} com ${idade} ano`
+                    res.appendChild(img) 
+                } else {
+                    genero = 'menina'
+                    res.innerHTML = `Identificamos uma ${genero} com ${idade} anos`
+                    res.appendChild(img) 
+                }
+                
             }
             
         }
